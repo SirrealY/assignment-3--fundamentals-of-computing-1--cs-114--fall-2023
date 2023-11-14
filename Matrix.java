@@ -29,11 +29,16 @@ public class Matrix {
   public void flipMatrix() {
     int length = matrix.length;
     for(int i = 0; i < length / 2;i++) {
-      for(int j = 0; j < length;j++) {
-        if(j != i && j != length - 1 - i){
-          //swap(i,j,length - 1 - i,j);
+      for(int j = 0; j < matrix[i].length;j++) {
+        if(j != length - 1 - i){
+          swap(i,j,length - 1 - i,length - 1 - j);
         }
       }
     }
+  }
+  private void swap(int x1, int y1, int x2, int y2) {
+    int hold = matrix[x2][y2];
+    matrix[x2][y2] = matrix[x1][y1];
+    matrix[x1][y1] = hold;
   }
 }

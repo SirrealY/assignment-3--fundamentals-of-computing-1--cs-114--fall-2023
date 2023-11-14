@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class RunMatrix {
   public static void main(String[] args) {
-    int size;
+    int size,x1,x2,y2,y1;
 
 
     Scanner scan = new Scanner(System.in);
@@ -15,20 +15,11 @@ public class RunMatrix {
     Matrix matrix = new Matrix(size);
 
     matrix.printMatrix(size);
-
-    //for (int i = 0; i < size;i++) {
-    //  for(int j = 0; j < size;j++) {
-     //   System.out.print(matrix[i][j] + "\t");
-    //  }System.out.println();
-   // }
     System.out.println("\nThe populated matrix looks like: ");
     matrix.populateMatrix();
     matrix.printMatrix(size);
-
-   // for (int i = 0; i < size;i++) {
-    //  for(int j = 0; j < size; j++) {
-   //     System.out.print(matrix[i][j] + "\t");
-  //    }System.out.println(); //Move to the next line for the next row
- //   }
+    System.out.println("\nFlipping Matrix...");
+    matrix.flipMatrix();
+    matrix.printMatrix(size);
   }
 }
