@@ -12,23 +12,23 @@ public class RunMatrix {
 
     size = scan.nextInt();
 
-    int[][] matrix = new int [size][size];
+    Matrix matrix = new Matrix(size);
 
-    System.out.println("\nThe size of your matrix will be " + size + "x" + size);
+    matrix.printMatrix(size);
 
-    System.out.println("Printing Matrix...");
-    //highlightMatrix();
-    for (int i = 0; i < size;i++) {
-      for(int j = 0; j < size;j++) {
-        System.out.print(matrix[i][j] + "\t");
-      }System.out.println();
-    }
-    System.out.println("The populated matrix looks like: ");
+    //for (int i = 0; i < size;i++) {
+    //  for(int j = 0; j < size;j++) {
+     //   System.out.print(matrix[i][j] + "\t");
+    //  }System.out.println();
+   // }
+    System.out.println("\nThe populated matrix looks like: ");
+    matrix.populateMatrix();
+    matrix.printMatrix(size);
 
-    for (int i = 0; i < size;i++) {
-      for(int j = 0; j < size; j++) {
-        System.out.print(matrix[i][j] + "\t");
-      }System.out.println(); //Move to the next line for the next row
-    }
+   // for (int i = 0; i < size;i++) {
+    //  for(int j = 0; j < size; j++) {
+   //     System.out.print(matrix[i][j] + "\t");
+  //    }System.out.println(); //Move to the next line for the next row
+ //   }
   }
 }
