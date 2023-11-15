@@ -2,7 +2,7 @@ public class Matrix {
   private int [][] matrix;
   public Matrix(int size) {
     matrix = new int[size][size];
-    System.out.println("The size of your matrix will be" + size + "x" + size);
+    System.out.println("The size of your matrix will be" +  size + "x" + size);
   }
 
   public void printMatrix(int size) {
