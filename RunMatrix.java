@@ -15,9 +15,11 @@ public class RunMatrix {
     Matrix matrix = new Matrix(size);
 
     matrix.printMatrix(size);
+
     System.out.println("\nThe populated matrix looks like: ");
     matrix.populateMatrix();
     matrix.printMatrix(size);
+
     System.out.println("\nFlipping Matrix...");
     matrix.flipMatrix();
     matrix.printMatrix(size);
