@@ -23,5 +23,8 @@ public class RunMatrix {
     System.out.println("\nFlipping Matrix...");
     matrix.flipMatrix();
     matrix.printMatrix(size);
+
+    scan.close();
   }
+
 }
