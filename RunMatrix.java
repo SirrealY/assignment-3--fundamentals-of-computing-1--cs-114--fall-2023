@@ -1,11 +1,7 @@
 import java.util.Scanner;
-
-
 public class RunMatrix {
   public static void main(String[] args) {
     int size,x1,x2,y2,y1;
-
-
     Scanner scan = new Scanner(System.in);
 
     System.out.println("Enter the size you want the matrix to be ");

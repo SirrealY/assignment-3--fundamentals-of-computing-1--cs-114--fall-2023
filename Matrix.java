@@ -16,7 +16,8 @@ public class Matrix {
           System.out.print("\u001b[0m");//Else you use the reset color
         }
           System.out.print(matrix[i][j] + "\t");
-      }System.out.println();
+      }
+      System.out.println();
     }
   }
 
